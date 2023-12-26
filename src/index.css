@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Poppins:wght@500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdfefe;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 4vh;
+    border: 7px dashed rgb(1, 17, 160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 2px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+.card {
+    width: 400px;
+    height: max-content;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(17,17,26,0.1), 0px 8px 24px rgba(17,17,26,0.1), 0px 16px 56px rgba(17,17,26,0.1);
+}
+
+.image {
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tour-info {
+    margin: 20px 5px;
+}
+
+.tour-price {
+    color: #1faa59;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tour-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.description {
+    margin-top: 12px;
+}
+
+.read-more {
+    color: #12b0e8;
+    cursor: pointer;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.btn-red {
+    border: none;
+    padding: 10px 80px;
+    margin-top: 18px;
+    border: 1px solid #b4161b;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #b4161b21;
+    transition: all 0.3s ease;
+}
+
+.btn-red:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.refresh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+}
+
+.btn-white {
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 700;
+}
+
+.btn-white:hover {
+    background-color: #fdecec;
+    color: #000;
+}
+
+@media screen and (max-width: 570px) {
+
+    .title {
+        font-size: 2rem;
+        margin: 2vh;
+        border: 4px dashed rgb(1, 17, 160);
+        padding: 1vh 4vw;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .titleDiv {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 2vh;
+        border: 3px dashed rgb(1, 17, 160);
+        border-radius: 16px;
+        padding: 0.5vh 2vw;
+    }
+}
